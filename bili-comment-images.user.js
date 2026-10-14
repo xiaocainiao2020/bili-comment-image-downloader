@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name         B站评论区图片批量下载（含隐藏图 / 原图）
-// @namespace    https://local.dsh/bili-comment-images
+// @namespace    https://github.com/xiaocainiao2020/bili-comment-image-downloader
 // @version      1.0.0
-// @description  批量提取并下载 B 站视频评论区所有图片原图。自动识别"9 张只显示 8 张"被折叠隐藏的第 9 张（图片查看器里翻页才能看到的那张）。支持直接调 API 补全、Shadow DOM 新版评论区、勾选导出、失败重试与超时重试。
-// @author       local
+// @description  批量提取并下载 B 站视频评论区所有图片原图。自动识别被折叠隐藏的第9张（图片查看器里翻页才能看到的那张）
+// @author       sonder
+// @license      MIT
 // @match        https://www.bilibili.com/video/*
 // @match        https://www.bilibili.com/list/*
 // @match        https://www.bilibili.com/bangumi/play/*
@@ -16,7 +17,6 @@
 // @connect      hdslb.com
 // @connect      biliimg.com
 // @connect      bilibili.com
-// @connect      *
 // @run-at       document-start
 // @noframes
 // ==/UserScript==
